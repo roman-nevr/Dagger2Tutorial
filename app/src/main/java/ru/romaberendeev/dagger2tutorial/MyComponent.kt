@@ -1,8 +1,9 @@
 package ru.romaberendeev.dagger2tutorial
 
+import dagger.BindsInstance
 import dagger.Component
 
-@Component(modules = [ MyModuleClass::class ])
+@Component(modules = [ MyModuleAbstractClass::class ])
 interface MyComponent {
 
   fun myClass(): MyClass
@@ -11,6 +12,6 @@ interface MyComponent {
 
   @Component.Factory
   interface Factory {
-    fun create(moduleClass: MyModuleClass): MyComponent
+    fun create(@BindsInstance string: String): MyComponent
   }
 }

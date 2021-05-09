@@ -9,8 +9,8 @@ abstract class MyModuleAbstractClass {
   companion object {
     @Provides
     @JvmStatic
-    fun provideMyDataClass(): MyDataClass {
-      return MyDataClass("Hello, world")
+    fun provideMyDataClass(string: String): MyDataClass {
+      return MyDataClass(string)
     }
   }
 }
