@@ -1,4 +1,4 @@
-package ru.romaberendeev.dagger2tutorial
+package ru.romaberendeev.dagger2tutorial.scope
 
 import dagger.Component
 

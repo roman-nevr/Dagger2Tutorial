@@ -1,4 +1,4 @@
-package ru.romaberendeev.dagger2tutorial;
+package ru.romaberendeev.dagger2tutorial.qualifier;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

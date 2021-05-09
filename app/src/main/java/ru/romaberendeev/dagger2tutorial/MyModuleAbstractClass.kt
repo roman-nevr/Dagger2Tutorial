@@ -2,7 +2,7 @@ package ru.romaberendeev.dagger2tutorial
 
 import dagger.Module
 import dagger.Provides
-import javax.inject.Named
+import ru.romaberendeev.dagger2tutorial.qualifier.MyQualifierKotlin
 
 @Module
 abstract class MyModuleAbstractClass {

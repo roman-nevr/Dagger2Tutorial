@@ -1,7 +1,7 @@
 package ru.romaberendeev.dagger2tutorial
 
+import ru.romaberendeev.dagger2tutorial.qualifier.MyQualifierKotlin
 import javax.inject.Inject
-import javax.inject.Named
 
 const val MY_STRING = "MyString"
 class MyDependenciesClass @Inject constructor(

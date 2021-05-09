@@ -1,6 +1,8 @@
 package ru.romaberendeev.dagger2tutorial
 
 import dagger.Component
+import ru.romaberendeev.dagger2tutorial.qualifier.MyQualifierKotlin
+import ru.romaberendeev.dagger2tutorial.subcomponent.MySubcomponent
 
 @Component(
     modules = [ MyModuleAbstractClass::class ],
@@ -14,6 +16,8 @@ interface MyComponent {
 
   @MyQualifierKotlin
   fun myDataClassQualified(): MyDataClass
+
+  fun plusMySubcomponent(): MySubcomponent
 
   @Component.Factory
   interface Factory {
