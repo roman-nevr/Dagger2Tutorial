@@ -4,4 +4,9 @@ import javax.inject.Inject
 
 data class MySubDataClass @Inject constructor(
     val myData: String
-)
+) {
+
+  @Inject
+  fun afterInject() {
+  }
+}

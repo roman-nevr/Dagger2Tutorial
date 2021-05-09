@@ -21,6 +21,8 @@ interface MyComponent {
 
   fun myInterface(): MyInterface
 
+  fun inject(activity: MainActivity)
+
   @Component.Factory
   interface Factory {
     fun create(dependencies: MyDependenciesClass): MyComponent
