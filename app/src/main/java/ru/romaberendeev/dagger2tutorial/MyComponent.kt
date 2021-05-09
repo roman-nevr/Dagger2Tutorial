@@ -12,6 +12,9 @@ interface MyComponent {
 
   fun myDataClass(): MyDataClass
 
+  @MyQualifierKotlin
+  fun myDataClassQualified(): MyDataClass
+
   @Component.Factory
   interface Factory {
     fun create(dependencies: MyDependenciesClass): MyComponent
